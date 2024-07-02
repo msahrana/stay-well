@@ -22,7 +22,6 @@ const AddRoom = () => {
   });
 
   const handleDates = (item) => {
-    console.log(item);
     setDates(item.selection);
   };
 
@@ -76,7 +75,6 @@ const AddRoom = () => {
       };
       await mutateAsync(roomData);
     } catch (err) {
-      console.log(err);
       toast.error(err.message);
       setLoading(false);
     }

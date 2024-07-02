@@ -26,7 +26,6 @@ const SignUp = () => {
       navigate("/");
       toast.success("User Create Successfully!");
     } catch (err) {
-      console.log(err);
       toast.error(err.massage);
     }
   };
@@ -37,7 +36,6 @@ const SignUp = () => {
       navigate("/");
       toast.success("User Create By Google!");
     } catch (err) {
-      console.log(err);
       toast.error(err.massage);
     }
   };

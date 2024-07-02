@@ -49,7 +49,6 @@ const Navbar = () => {
       }
       // await mutateAsync();
     } catch (err) {
-      console.log(err);
       toast.error(err.massage);
     } finally {
       closeModal();

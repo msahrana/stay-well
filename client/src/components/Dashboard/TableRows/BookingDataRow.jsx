@@ -32,7 +32,6 @@ const BookingDataRow = ({booking, refetch}) => {
 
   //  Handle Delete
   const handleDelete = async (id) => {
-    console.log(id);
     try {
       await mutateAsync(id);
     } catch (err) {

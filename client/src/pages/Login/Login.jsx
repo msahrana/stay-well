@@ -24,7 +24,6 @@ const Login = () => {
       navigate(from, {replace: true});
       toast.success("User SignIn Successfully!");
     } catch (err) {
-      console.log(err);
       toast.error(err.massage);
     }
   };
@@ -36,7 +35,6 @@ const Login = () => {
       toast.success("Request Success! Check your email for further process...");
       setLoading(false);
     } catch (err) {
-      console.log(err);
       toast.error(err.message);
       setLoading(false);
     }
@@ -48,7 +46,6 @@ const Login = () => {
       navigate(from, {replace: true});
       toast.success("User Create By Google!");
     } catch (err) {
-      console.log(err);
       toast.error(err.massage);
     }
   };

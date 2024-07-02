@@ -28,7 +28,7 @@ const CheckoutForm = ({closeModal, bookingInfo, refetch}) => {
   //   get clientSecret
   const getClientSecret = async (price) => {
     const {data} = await axiosSecure.post("/create-payment-intent", price);
-    console.log("clientSecret from server--->", data);
+
     setClientSecret(data.clientSecret);
   };
 
@@ -51,7 +51,6 @@ const CheckoutForm = ({closeModal, bookingInfo, refetch}) => {
     });
 
     if (error) {
-      console.log("[error]", error);
       setCardError(error.message);
       setProcessing(false);
       return;
